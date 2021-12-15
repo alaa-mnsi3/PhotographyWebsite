@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACUA,AAAA,KAAK,AACL,CACI,eAAe,CAAA,OAAC,CAChB,qBAAqB,CAAA,IAAC,CAEtB,iBAAiB,CAAA,OAAC,CAClB,sBAAsB,CAAA,OAAC,CACvB,uBAAuB,CAAA,IAAC,CAExB,wBAAwB,CAAA,OAAC,CACzB,yBAAyB,CAAA,OAAC,CAC7B,AErBD,AAAA,OAAO,AACP,CACI,gBAAgB,CAAE,WAAW,CAC7B,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAC,CAAC,CACL,IAAI,CAAC,CAAC,CACN,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACf,ACRD,AAAA,YAAY,AACZ,CAGI,gBAAgB,CAAE,iEAAiE,CACnF,iBAAiB,CAAE,SAAS,CAC5B,mBAAmB,CAAE,MAAM,CAC3B,eAAe,CAAE,OAAO,CACxB,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,KAAK,CACZ,UAAU,CAAE,KAAK,CACpB",
+    "sources": [
+        "../Scss/main.scss",
+        "../Scss/Base/Variables/_variable.scss",
+        "../Scss/Base/mixins/_mixins.scss",
+        "../Scss/Components/_nav.scss",
+        "../Scss/Components/_BannerSec.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
