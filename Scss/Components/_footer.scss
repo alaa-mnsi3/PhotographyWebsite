@@ -1,0 +1,82 @@
+.footer
+{
+    background-color: $secondary-color-dark;
+    color: $secondary-color-light;
+    &-sec
+    {
+        &:first-of-type
+        {
+            width: 75%;
+            @include media('phone')
+            {
+                width: 95%;
+            }
+        }
+        h5
+        {
+            font:bold 1.25rem $secondary-font-family;
+            margin-bottom: 1.5rem;
+        }
+        p
+        {
+            font:$primary-font;
+            color: $primary-light-color;
+            line-height: 1.5rem;
+            letter-spacing: .3px;
+            i,span
+            {
+                color: $primary-color;
+            }
+        }
+        #footer-sign
+        {
+            width: 85%;
+            @include media('phone')
+            {
+                width: 100%;
+            }
+            input
+            {
+                width: 95%;
+                background-color: transparent;
+                padding: .3rem 0rem .3rem 1rem;
+                border: 1px solid rgba($primary-light-color, 0.6);
+                border-right-color:$primary-color ;
+                color: rgba($secondary-color-light, 0.6);
+            }
+            ::placeholder
+            {
+                color: rgba($secondary-color-light,0.6);
+            }
+            button
+            {
+                background-color: $primary-color;
+                padding: .3rem 0.7rem;
+                color: $secondary-color-light;
+                border: 1px solid $primary-color;
+                i
+                {
+                    font-weight: lighter;
+                }
+            }
+        }
+        &-social
+        {
+            a
+            {
+                margin-right: 2rem;
+                cursor: pointer;
+                i
+                {
+                    font-size:15px;
+                    color: rgba($secondary-color-light, 0.8);
+                    transition: color 300ms ease-in-out;
+                }
+                &:hover i,&:focus i
+                {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

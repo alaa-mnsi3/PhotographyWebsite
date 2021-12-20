@@ -1,0 +1,134 @@
+.mapouter
+{
+    position:relative;
+    text-align:right;
+    height:500px;
+}
+.gmap_canvas 
+{
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+}
+.Contact
+{
+    @extend %grid;
+    margin-top: 3rem;
+    h3,h2
+    {
+        font: bold 1rem $secondary-font-family;
+        color: $secondary-color;
+    }
+    h2
+    {
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+    }
+    p
+    {
+        font:$primary-font;
+        color:rgba($primary-light-color,.7);
+        letter-spacing: .5px;
+    }
+    &-form
+    {
+        @extend %grid_1-4;
+        form
+        {
+            ::placeholder
+            {
+                @extend %placeholder;
+            }
+            input,textarea
+            {
+                @extend %input;
+                margin-bottom: 1.6rem;
+                border-radius: 5px;
+            }
+            input
+            {
+                padding: .7rem 1rem;
+            }
+            textarea
+            {
+                padding: .5rem 1rem;
+                height: 190px;
+            }
+            .form-name-addresss
+            {
+                @include media('small-phone')
+                {
+                    flex-direction: column;
+                }
+                input
+                {
+                    width: calc(100% /2.1);
+                    @include media('small-phone')
+                    {
+                        width: calc(100% /1);
+                    }
+                }
+            }
+            button
+            {
+                width: 20%;
+                background-color: $primary-color;
+                color: $secondary-color-light;
+                text-transform: uppercase;
+                font:$primary-font;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 1rem 0;
+                margin-top: 1.5rem;
+                transition: background-color 500ms ease-in-out;
+                @include media('small-phone')
+                {
+                    width: 100%
+                }
+                &:hover,&:focus
+                {
+                    background-color: $secondary-color
+                }
+            }
+        }
+    }
+    &-info
+    {
+        margin-right: 100px;
+        @extend %grid_1-2;
+        &-icon
+        {
+            margin-right: 1.5rem;
+        }
+        .icon-1
+        {
+            i
+            {
+                font-size: 25px;
+                color:rgba($primary-light-color,.5);
+            }
+        }
+        .icon-2
+        {
+            i
+            {
+                font-size: 44px;
+            }
+        }
+        .icon-3
+        {
+            i
+            {
+                font-size: 27px;
+            }
+        }
+        &-text
+        {
+            width: auto;
+            &:nth-of-type(2)
+            {
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -8,6 +8,19 @@ $secondary-color-light:#fff;
 $first-additional-color:#797979;
 $second-color-additional:#f7f7f7;
 
+
+$primary-font-size:.8rem;
+
+$primary-font-family: "Segoe UI",
+"Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$secondary-font-family:"Playfair Display", serif;
+
+$primary-font:500 $primary-font-size $primary-font-family;
+
+
+$box-shadow:1px 1px 25px rgba($first-additional-color, .2);
+
 :root
 {
     --primary-color:#f81c1c;
@@ -19,4 +32,63 @@ $second-color-additional:#f7f7f7;
 
     --first-additional-color:#797979;
     --second-color-additional:#f7f7f7;
+
+    --primary-font-family: "Segoe UI",
+    "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --secondary-font-family:"Playfair Display", serif;
+
+    --primary-font-size:.8rem;
+
+    --box-shadow:1px 1px 30px rgba(var(--first-additional-color), .2);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: $primary-font-family;
+}
+body
+{
+    overflow-x: hidden;
+}
+
+button,input
+{
+    border: none;
+    outline: none;
+}
+a
+{
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+.row
+{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.main
+{
+    position: relative;
+    margin-top: 5rem;
+}
+.sec-col-4
+{
+    @extend %sec-col-4;
+}
+.sec-col-3
+{
+    @extend %sec-col-3;
+}
+ul
+{
+    padding-left: 0;
 }

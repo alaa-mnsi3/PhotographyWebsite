@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="description" content="this is testing"/>
+    <title>Pentax Photography</title>
+    <link rel="icon" href="../images/xfavicon.png.pagespeed.ic.2OEzEpntUD.webp" type="image/jpg">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>    
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <!-- navBar/scss/Components/_nav.scss nav.js -->
+    <header class="fluid-container banner-About">
+        <nav class="navbar justify-content-center navbar-expand-lg navbar-light Header">
+            <div class="d-flex justify-content-around align-items-center w-100 mh-100 h-100">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/download (1).webp"/>
+                </a>
+                <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-parent h-100 mh-100">
+                    <ul class="navbar-nav nav-items mb-2 mb-lg-0">
+                        <li class="nav-item nav-items-item">
+                            <a class="nav-link nav-item-link " href="../index.html">Home</a>
+                        </li>
+                        <li class="item-space">/</li>
+                        <li class="nav-item nav-items-item">
+                            <a class="nav-link nav-item-link" href="About.html">About</a>
+                        </li>
+                        <li class="item-space">/</li>
+                        <li class="nav-item nav-items-item">
+                            <a class="nav-link nav-item-link" href="Service.html">services</a>
+                        </li>
+                        <li class="item-space">/</li>
+                        <li class="nav-item nav-items-item">
+                            <a class="nav-link nav-item-link" href="Project.html">projects</a>
+                        </li>
+                        <li class="item-space">/</li>
+                        <li class="nav-item nav-items-item Blog active">
+                            <a class="nav-link nav-item-link active" aria-current="page" >Blog</a>
+                            <ul class="Blog-dropDown">
+                                <li class="Blog-dropDown-item">
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li class="Blog-dropDown-item">
+                                    <a>Blog Details</a>
+                                </li>
+                                <li class="Blog-dropDown-item">
+                                    <a>Project Details</a>
+                                </li>
+                                <li class="Blog-dropDown-item">
+                                    <a>Pricing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item-space">/</li>
+                        <li class="nav-item nav-items-item">
+                            <a class="nav-link nav-item-link" href="Contact.html">contect</a>
+                        </li>
+                    </ul>
+                    <form class="Seacrh d-none d-md-none d-lg-flex">
+                        <button id="searchBtn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- search --><!-- navBar/scss/Components/_nav.scss nav.js -->
+            <div class="Search-div container">
+                <form id="searchInput" class="form-control">
+                    <input type="text" placeholder="Search Here"/>
+                    <button id="closeSearch">&times;</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- navBar/scss/Components/_nav.scss nav.js -->
+        <ul class="mob-items collapse navbar-collapse d-lg-none d-xl-none" id="navbarSupportedContent">
+            <li class="mob-items-item active">
+                <a class="mob-items-item-link" href="../index.html">Home</a>
+            </li>
+            <li class="mob-items-item">
+                <a class="mob-items-item-link" href="About.html">About</a>
+            </li>
+            <li class="mob-items-item">
+                <a class="mob-items-item-link" href="Service.html">services</a>
+            </li>
+            <li class="mob-items-item">
+                <a class="mob-items-item-link" href="Project.html">projects</a>
+            </li>
+            <li class="mob-items-item Blog-mob">
+                <a class="mob-items-item-link active" aria-current="page"  type="button"
+                data-bs-toggle="collapse" data-bs-target="#blogDropDown" aria-controls="blogDropDown">Blog</a>
+                <ul class="Blog-dropDown collapse navbar-collapse" id="blogDropDown">
+                    <li class="Blog-dropDown-item">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="Blog-dropDown-item">
+                        <a>Blog Details</a>
+                    </li>
+                    <li class="Blog-dropDown-item">
+                        <a>Project Details</a>
+                    </li>
+                    <li class="Blog-dropDown-item">
+                        <a>Pricing</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mob-items-item">
+                <a class="mob-items-item-link" href="Contact.html">contect</a>
+            </li>
+        </ul>
+
+        <div class="container banner-About-info">
+            <div class="banner-About-info-text">
+                <h3>
+                    our blog
+                </h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a>
+                                Blog
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- scss/components/_blog -->
+    <section class="container">
+        <div class="parent-blog">
+            <div class="blog-info">
+                <div class="blog-info-sec">
+                    <div class="w-100"> 
+                        <img src="../images/m-blog-1.jpg.webp" width="100%" alt="blog1"/>
+                    </div>
+                    <div class="blog-info-sec-text">
+                        <span class="blog-info-sec-text-date"><em>15</em><br/> jan</span>
+                        <h2>Google inks pact for new 35-storey office</h2>
+                        <p>
+                            That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                        </p>
+                        <ul class="blog-info-sec-text-footer d-flex px-0">
+                            <li>
+                                <a>
+                                    <i class="far fa-user"></i>
+                                    <span>
+                                        Travel, Lifestyle
+                                    </span>
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a>
+                                    <i class="far fa-comments"></i>
+                                    <span>
+                                        03 Comments
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-info-sec">
+                    <div class="w-100"> 
+                        <img src="../images/m-blog-2.jpg.webp" width="100%" alt="blog1"/>
+                    </div>
+                    <div class="blog-info-sec-text">
+                        <span class="blog-info-sec-text-date"><em>15</em><br/> jan</span>
+                        <h2>Google inks pact for new 35-storey office</h2>
+                        <p>
+                            That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                        </p>
+                        <ul class="blog-info-sec-text-footer d-flex px-0">
+                            <li>
+                                <a>
+                                    <i class="far fa-user"></i>
+                                    <span>
+                                        Travel, Lifestyle
+                                    </span>
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a>
+                                    <i class="far fa-comments"></i>
+                                    <span>
+                                        03 Comments
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-info-sec">
+                    <div class="w-100"> 
+                        <img src="../images/m-blog-3.jpg.webp" width="100%" alt="blog1"/>
+                    </div>
+                    <div class="blog-info-sec-text">
+                        <span class="blog-info-sec-text-date"><em>15</em><br/> jan</span>
+                        <h2>Google inks pact for new 35-storey office</h2>
+                        <p>
+                            That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                        </p>
+                        <ul class="blog-info-sec-text-footer d-flex px-0">
+                            <li>
+                                <a>
+                                    <i class="far fa-user"></i>
+                                    <span>
+                                        Travel, Lifestyle
+                                    </span>
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a>
+                                    <i class="far fa-comments"></i>
+                                    <span>
+                                        03 Comments
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-info-sec">
+                    <div class="w-100"> 
+                        <img src="../images/m-blog-4.jpg.webp" width="100%" alt="blog1"/>
+                    </div>
+                    <div class="blog-info-sec-text">
+                        <span class="blog-info-sec-text-date"><em>15</em><br/> jan</span>
+                        <h2>Google inks pact for new 35-storey office</h2>
+                        <p>
+                            That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                        </p>
+                        <ul class="blog-info-sec-text-footer d-flex px-0">
+                            <li>
+                                <a>
+                                    <i class="far fa-user"></i>
+                                    <span>
+                                        Travel, Lifestyle
+                                    </span>
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a>
+                                    <i class="far fa-comments"></i>
+                                    <span>
+                                        03 Comments
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-info-sec">
+                    <div class="w-100"> 
+                        <img src="../images/m-blog-5.jpg.webp" width="100%" alt="blog1"/>
+                    </div>
+                    <div class="blog-info-sec-text">
+                        <span class="blog-info-sec-text-date"><em>15</em><br/> jan</span>
+                        <h2>Google inks pact for new 35-storey office</h2>
+                        <p>
+                            That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                        </p>
+                        <ul class="blog-info-sec-text-footer d-flex px-0">
+                            <li>
+                                <a>
+                                    <i class="far fa-user"></i>
+                                    <span>
+                                        Travel, Lifestyle
+                                    </span>
+                                </a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a>
+                                    <i class="far fa-comments"></i>
+                                    <span>
+                                        03 Comments
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-info-numPage d-flex justify-content-center align-items-center">
+                    <a>
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a>
+                        1
+                    </a>
+                    <a class="active">
+                        2
+                    </a>
+                    <a>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-list">
+                <div class="blog-list-sec blog-sec1">
+                    <form>
+                        <div class="d-flex justify-content-between">
+                            <input type="text" placeholder="search Keyword"/>
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <button>search</button>
+                    </form>
+                </div>
+                <div class="blog-list-sec blog-sec2">
+                    <h3>
+                        category
+                    </h3>
+                    <ul>
+                        <li>
+                            <a>Resaurant food<span>(37)</span></a>
+                        </li>
+                        <li>
+                            <a>Travel news<span>(10)</span></a>
+                        </li>
+                        <li>
+                            <a>Modern technology<span>(03)</span></a>
+                        </li>
+                        <li>
+                            <a>Product<span>(11)</span></a>
+                        </li>
+                        <li>
+                            <a>Inspiration<span>(21)</span></a>
+                        </li>
+                        <li>
+                            <a>Health Care (21)<span>(09)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog-list-sec blog-sec3">
+                    <h3>
+                        Recent Post
+                    </h3>
+                    <ul>
+                        <li class="d-flex align-items-center">
+                            <div>
+                                <div>
+                                    <img src="../images/post1.jpg.webp" alt="post"/>
+                                </div>
+                            </div>
+                            <div class="blog-sec3-text">
+                                <a>
+                                    <h4>
+                                        From life was you fish...
+                                    </h4>
+                                </a>
+                                <span>January 12, 2019</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div>
+                                <div>
+                                    <img src="../images/post2.jpg.webp" alt="post"/>
+                                </div>
+                            </div>
+                            <div class="blog-sec3-text">
+                                <a>
+                                    <h4>
+                                        The Amazing Hubble
+                                    </h4>
+                                </a>
+                                <span>03 Hours ago</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div>
+                                <div>
+                                    <img src="../images/post3.jpg.webp" alt="post"/>
+                                </div>
+                            </div>
+                            <div class="blog-sec3-text">
+                                <a>
+                                    <h4>
+                                        Astronomy Or Astrology
+                                    </h4>
+                                </a>
+                                <span>03 Hours ago</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div>
+                                <div>
+                                    <img src="../images/post4.jpg.webp" alt="post"/>
+                                </div>
+                            </div>
+                            <div class="blog-sec3-text">
+                                <a>
+                                    <h4>
+                                        Asteroids telescope
+                                    </h4>
+                                </a>
+                                <span>01 Hours ago</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog-list-sec blog-sec4">
+                    <h3>
+                        Tag Clouds
+                    </h3>
+                    <ul class="d-flex flex-wrap">
+                        <li>
+                            <a>project</a>
+                        </li>
+                        <li>
+                            <a>love</a>
+                        </li>
+                        <li>
+                            <a>technology</a>
+                        </li>
+                        <li>
+                            <a>travel</a>
+                        </li>
+                        <li>
+                            <a>Resaurant</a>
+                        </li>
+                        <li>
+                            <a>life style</a>
+                        </li>
+                        <li>
+                            <a>design</a>
+                        </li>
+                        <li>
+                            <a>illustration</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog-list-sec blog-sec5">
+                    <h3>
+                        Instagram Feeds
+                    </h3>
+                    <ul>
+                        <div class="d-flex justify-content-between">
+                            <li>
+                                <img src="../images/widget-i1.png.webp" alt="widget"/>
+                            </li>
+                            <li>
+                                <img src="../images/widget-i2.png.webp" alt="widget"/>
+                            </li>
+                            <li>
+                                <img src="../images/widget-i3.png.webp" alt="widget"/>
+                            </li>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <li>
+                                <img src="../images/widget-i4.png.webp" alt="widget"/>
+                            </li>
+                            <li>
+                                <img src="../images/widget-i5.png.webp" alt="widget"/>
+                            </li>
+                            <li>
+                                <img src="../images/widget-i6.png.webp" alt="widget"/>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="blog-list-sec blog-sec6">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="text" placeholder="Enter email"/>
+                        <button>subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scss/components/footer -->
+    <footer class="main main-sec3 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="footer-sec">
+                        <h5>About Us</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                        </p>
+                        <p>
+                            Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart"></i> by 
+                            <span>
+                                Alaa Hammad
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12 footer-sec">
+                    <h5>Newsletter</h5>
+                    <p>
+                        Stay updated with our latest trends
+                    </p>
+                    <form id="footer-sign" class="d-flex">
+                        <input placeholder="Enter Email"/>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-8 col-xs-12 footer-sec mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0">
+                    <h5>Follow Us</h5>
+                    <p>
+                        Let us be social
+                    </p>
+                    <div class="footer-sec-social d-flex">
+                        <a><i class="fab fa-facebook-f"></i></a>
+                        <a><i class="fab fa-twitter"></i></a>
+                        <a><i class="fab fa-linkedin-in"></i></a>
+                        <a><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/filter.js"></script>
+</body>
+</html>

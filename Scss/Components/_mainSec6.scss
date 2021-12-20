@@ -1,0 +1,99 @@
+.main-sec6
+{
+    &-col3
+    {
+        background-color:rgba($first-additional-color, .05);
+        box-shadow: 1px 1px 0px transparent;
+        transition: background-color,box-shadow 300ms ease-in-out;
+        &-img
+        {
+            overflow: hidden;
+            img
+            {
+                transform: scale(1);
+                transition: transform 400ms ease-in-out;
+            }
+        }
+        &-info
+        {
+            padding: 2rem;
+            &-header
+            {
+                a
+                {
+                    margin-right: 1.7rem;
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+                    &:last-of-type
+                    {
+                        margin-right: 0;
+                    }
+                    i,span
+                    {
+                        color:$first-additional-color;
+                        transition: color 300ms ease-in-out;
+                    }
+                    span
+                    {
+                        font:$primary-font;
+                    }
+                    i
+                    {
+                        font-size:13px;
+                        margin-right: .5rem;
+                    }
+                    &:hover i,&:hover span,&:focus i,&:focus span
+                    {
+                        color: $primary-color;
+                    }
+                }
+            }
+            &-title
+            {
+                color: $secondary-color;
+                cursor: pointer;
+                h4
+                {
+                    font:bold 1.25rem $secondary-font-family;
+                    margin-bottom: 1rem;
+
+                }
+                &:hover,&:focus
+                {
+                    color: $secondary-color;
+                }
+            }
+            p
+            {
+                font:$primary-font;
+                color:$first-additional-color;
+                margin-bottom: 1rem;
+                line-height: 1.3rem;
+                letter-spacing: .7px;
+            }
+            &-btn
+            {
+                cursor: pointer;
+                font:$primary-font;
+                color:$secondary-color;
+                text-transform: uppercase;
+                word-spacing: .2rem;
+                transition: color 300ms ease-in-out;
+                &:hover,&:focus
+                {
+                    color: $primary-color;
+                }
+            }
+        }
+        &:hover &-img img
+        {
+            transform: scale(1.1);
+        }
+        &:hover
+        {
+            background-color: $secondary-color-light;
+            box-shadow: $box-shadow;
+        }
+    }
+
+}

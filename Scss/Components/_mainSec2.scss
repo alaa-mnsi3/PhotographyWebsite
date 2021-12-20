@@ -1,0 +1,48 @@
+.main-sec2
+{
+    &-parent
+    {
+        flex-wrap: wrap;
+        .sec-col-4
+        {
+            background-color: rgba($first-additional-color,0.05);
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            cursor: pointer;
+            transition: background-color 500ms ease-in-out;
+            &>div
+            {
+                margin-bottom: 1rem;
+                i
+                {
+                    font:500 3rem $primary-font-family; 
+                    color: $secondary-color;
+                    transition:color 500ms ease-in-out;
+                }
+            }
+            h4
+            {
+                font:600 1.25rem $secondary-font-family;
+                color: $secondary-color;
+                margin-bottom: 15px;
+            }
+            p
+            {
+                margin-bottom: 0;
+                font: $primary-font;
+                color: $first-additional-color;
+                line-height: 1.5rem;
+                letter-spacing: 1px;
+            }
+            &:hover
+            {
+                background-color: $secondary-color-light;
+                box-shadow:$box-shadow;
+            }
+            &:hover i
+            {
+                color: $primary-color;
+            }
+        }
+    }
+}

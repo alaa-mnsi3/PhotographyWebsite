@@ -1,0 +1,312 @@
+.main-sec1
+{
+    &-filter
+    {
+        &-toggle
+        {
+            margin-bottom: 1.875rem;
+            li
+            {
+                margin-right: 2.5rem;
+                @extend %liStyle;
+                cursor: pointer;
+                position: relative;
+                @include media('small-phone')
+                {
+                    margin-right: .9rem;
+                }
+            }
+            li::after
+            {
+                @extend %liHoverHeader;
+                transform: translateX(-4px);
+            }
+            li:hover::after, li.active::after
+            {
+                opacity: 1;
+                width: 150%;
+                @include media('small-phone')
+                {
+                    width: 100%;
+                }
+            }
+            li.active,li:hover,li:focus
+            {
+                color: $primary-color;
+            }
+        }
+        &-sec
+        {
+            grid-gap:30px ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            &.active
+            {
+                position: relative;
+                display: grid;
+            }
+            &-item
+            {
+                position: relative;
+                padding: 0;
+                &-Secimg
+                {
+                    width: 100%;
+                    height: 100%;
+                    img
+                    {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-info
+                {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($secondary-color-light, .7);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    opacity: 0;
+                    transition:all 700ms ease-in-out;
+                    h4
+                    {
+                        color: $primary-light-color;
+                        text-align: left;
+                        font-size: $primary-font-size;
+                        margin-bottom: 0;
+                    }
+                    p
+                    {
+                        text-align: left;
+                        font-size: 1.25rem;
+                        font-family: $secondary-font-family;
+                    }
+                    &:hover,&:focus
+                    {
+                        opacity: 1;
+                    }
+                }
+            }
+            .item-2
+            {
+                grid-column:2/4;
+                grid-row:1/3;
+                max-height: 729px;
+                height: 729px;
+                @include media('tab-port')
+                {
+                    grid-column: 3/4;
+                    height: 394px;
+                }
+                @include media('phone')
+                {
+                    grid-row: 2/4;
+                    grid-column: 1/4;
+                    height: auto;
+                }
+            }
+            .item-4
+            {
+                max-height: 390px;
+                height: 390px;
+                grid-column:2/4;
+                grid-row:3/5;
+                max-height: 319px;
+                height: 319px;
+                @include media('tab-port')
+                {
+                    margin-top: 0;
+                    grid-row: 3/4;
+                    grid-column: 1/3;
+                    height: 172px;
+                }
+                @include media('phone')
+                {
+                    grid-row: 5/6;
+                    grid-column: 1/4;
+                    height: auto;
+                }
+            }
+            .item-1,.item-3,.item-5
+            {
+                grid-column-start:1;
+                grid-column-end:2;
+                align-self: start;
+            }
+            .item-1
+            {
+                grid-row: 1/2;
+                height: 282px;
+                @include media('bigDesktop')
+                {
+                    height: 363px;
+                }
+                @include media('tab-port')
+                {
+                    grid-column: 1/3;
+                    height: 310px;
+                }
+                @include media('phone')
+                {
+                    grid-row: 1/2;
+                    grid-column: 1/4;
+                    height: auto;
+                }
+            }
+            .item-3
+            {
+                grid-row: 2/4;
+                height: 310px;
+                @include media('tab-port')
+                {
+                    grid-row: 2/3;
+                    grid-column: 1/3;
+                    height: 353px;
+                }
+                @include media('phone')
+                {
+                    grid-row: 4/5;
+                    grid-column: 1/4;
+                    height: auto;
+
+                }
+            }
+            .item-5
+            {
+                height: 436px;
+                grid-row: 3/6;
+                margin-top: -30%;
+                @include media('bigDesktop')
+                {
+                    margin-top: -5%;
+                    height: 470px;
+                }
+                @include media('tab-land')
+                {
+                    margin-top: -35%;
+                }
+                @include media('tab-port')
+                {
+                    margin-top: 0;
+                    grid-column: 3/4;
+                    grid-row: 3/4;
+                    margin-top: -81%;
+                }
+                @include media('phone')
+                {
+                    margin-top: 0;
+                    grid-row: 6/7;
+                    grid-column: 1/4;
+                    height: auto;
+                }
+            }
+            .item1-sec2
+            {
+                height: 100%;
+                grid-column: 1/3;
+                grid-row: 1/auto;
+                @include media('bigDesktop')
+                {
+                    grid-column: 1/3;
+                    grid-row: 1/auto;
+                }
+                @include media('tab-land')
+                {
+                    grid-column: 1/3;
+                    grid-row: 1/auto;
+                }
+                @include media('tab-port')
+                {
+                    grid-column: 1/2;
+                    grid-row: 1/auto;
+                }
+                @include media('phone')
+                {
+                    grid-column: 1/4;
+                    grid-row: auto/auto;
+                }
+            }
+            .item2-sec2
+            {
+                height: 100%;
+                grid-column: 1/2;
+                grid-row: auto/auto;
+                @include media('bigDesktop')
+                {
+                    grid-column: 1/2;
+                    grid-row: auto/auto;
+                }
+                @include media('tab-land')
+                {
+                    grid-column: 1/2;
+                    grid-row: auto/auto;
+                }
+                @include media('tab-port')
+                {
+                    grid-column: 2/4;
+                    grid-row: 1/3;
+                }
+                @include media('phone')
+                {
+                    grid-column: 1/4;
+                    grid-row: auto/auto;
+                }
+            }
+            .item3-sec2
+            {
+                height: 100%;
+                grid-column: 3/4;
+                grid-row: 1/auto;
+                @include media('bigDesktop')
+                {
+                    grid-column: 3/4;
+                    grid-row: 1/auto;
+                }
+                @include media('tab-land')
+                {
+                    grid-column: 3/4;
+                    grid-row: 1/auto;
+                }
+                @include media('tab-port')
+                {
+                    grid-column: 1/2;
+                    grid-row: auto/auto;
+                }
+                @include media('phone')
+                {
+                    grid-column: 1/4;
+                    grid-row: 1/auto;
+                }
+            }
+        }
+    }
+}
+
+//title-sec aslibrary for all sections
+.title-sec
+{
+    margin-bottom: 3.125rem;
+    h3
+    {
+        font:700 2.25rem $secondary-font-family;
+        color: $secondary-color;
+        span
+        {
+            font-family: $secondary-font-family;
+            color: $primary-color;
+            font-style:italic ;
+        }
+    }
+    p
+    {
+        font:$primary-font;
+        color: $first-additional-color;
+    }
+}

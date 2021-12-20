@@ -1,5 +1,18 @@
 @import 'Base/Variables/variable';
 @import 'Base/mixins/mixins';
+@import 'Base/mixins/extends';
 
 @import 'Components/nav';
-@import 'Components/BannerSec';
+@import 'Components/mainSec';
+@import 'Components/mainSec2';
+@import 'Components/mainSec3';
+@import 'Components/mainSec4';
+@import 'Components/mainSec5';
+@import 'Components/mainSec6';
+@import 'Components/footer';
+
+
+@import 'Components/blog';
+
+
+@import 'Components/contact';

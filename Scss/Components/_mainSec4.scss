@@ -1,0 +1,64 @@
+.main-sec4
+{
+    .sec-img
+    {
+        position: relative;
+        display: flex;
+        height: 480px;
+        &-overlay
+        {
+            width: 60%;
+            height: 410px;
+            align-self: flex-end;
+            background-image: url(https://preview.colorlib.com/theme/pentax/img/background/xpattern1.jpg.pagespeed.ic.Cv67iNMJfC.webp);
+            div
+            {
+                position: absolute;
+            }
+            div:first-of-type
+            {
+                top: 0%;
+                left: 12%;
+            }
+            div:last-of-type
+            {
+                bottom: -9%;
+                right:2%;
+            }
+        }
+    }
+    &-text
+    {
+        h3
+        {
+            font:bold 2.25rem/2.95rem $secondary-font-family;
+            color: $secondary-color;
+            text-transform: capitalize;
+            margin-bottom: 1.25rem;
+        }
+        p
+        {
+            font:$primary-font;
+            color:rgba($primary-light-color,.85);
+            line-height: 1.5rem;
+            letter-spacing: .8px;
+            margin-bottom: 1rem;
+        }
+        button
+        {
+            cursor: pointer;
+            background-color: $primary-color;
+            padding:1rem 3.3rem;
+            color: $secondary-color-light;
+            border-radius: 3px;
+            font:$primary-font;
+            text-transform: uppercase;
+            margin-top: 7px;
+            transition: background-color 300ms ease-in-out;
+            &:hover
+            {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

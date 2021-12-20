@@ -1,0 +1,74 @@
+.main-sec3
+{
+    padding: 7rem 0;
+    background-color:rgba($first-additional-color, .05);
+    .sec-col-3
+    {
+        border: 20px solid $secondary-color-light;
+        text-align: center;
+        padding: 2rem 0;
+        border-radius: 4px;
+        .sec-card-header
+        {
+            margin-bottom: 2rem;
+            h4
+            {
+                font:bold 1.68rem $secondary-font-family;
+                color: $secondary-color;
+                margin-bottom: .5rem;
+            }
+            p
+            {
+                font:$primary-font;
+                color: $first-additional-color;
+            }
+            span
+            {
+                font:bold 3.125rem $primary-font-family;
+            }
+        }
+        .space-card
+        {
+            width: 100%;
+            background-color: $secondary-color-light;
+            height: 10px;
+        }
+        .sec-card-info
+        {
+            padding-top: 1.5rem;
+            p
+            {
+                font:$primary-font;
+                color: $first-additional-color;
+                margin-bottom: .8125rem;
+                text-transform: capitalize;
+                letter-spacing: .8px;
+                &:last-of-type
+                {
+                    margin-bottom: 0;
+                }
+                i
+                {
+                    margin-right: 5px;
+                    font-size: 17px;
+                }
+            }
+        }
+        button
+        {
+            margin-top: 2.8rem;
+            background-color: $secondary-color;
+            color: $secondary-color-light;
+            padding:1rem 3.1rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font:$primary-font;
+            cursor: pointer;
+            transition:background-color 500ms ease-in-out;
+        }
+        &:hover button
+        {
+            background-color: $primary-color;
+        }
+    }
+}
