@@ -5,12 +5,20 @@
         &-toggle
         {
             margin-bottom: 1.875rem;
+            @media only screen and (max-width:392px) 
+            {
+                flex-wrap: wrap;  
+            }
             li
             {
                 margin-right: 2.5rem;
                 @extend %liStyle;
                 cursor: pointer;
                 position: relative;
+                @media only screen and (max-width:392px) 
+                {
+                    margin-bottom: 1rem; 
+                }
                 @include media('small-phone')
                 {
                     margin-right: .9rem;
